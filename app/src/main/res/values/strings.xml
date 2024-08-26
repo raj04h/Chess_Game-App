@@ -1,0 +1,124 @@
+<resources>
+    <!-- Game Title -->
+    <string name="app_name">Chess</string>
+
+    <!-- Game Rules -->
+    <string name="game_rules_title">Game Rules</string>
+    <string name="game_setup">
+        <![CDATA[
+        Game Setup:\n
+        The game is played between two players on a 5x5 grid.\n
+        Each player controls a team of 5 characters, which can include Pawns, Hero1, and Hero2.\n
+        Players arrange their characters on their respective starting rows at the beginning of the game.
+        ]]>
+    </string>
+    <string name="character_movement">
+         <![CDATA[
+    Pawn:\n
+     - Moves one block in any direction (Left, Right, Forward, or Backward).\n
+     - Move commands: L (Left), R (Right), F (Forward), B (Backward)\n\n
+
+ Hero1:\n
+     - Moves two blocks straight in any direction.\n
+     - Kills any opponents character in its path.\n
+     - Move commands: L (Left), R (Right), F (Forward), B (Backward)\n\n
+
+  Hero2:\n
+     - Moves two blocks diagonally in any direction.\n
+     - Kills any opponents character in its path.\n
+     - Move commands: FL (Forward-Left), FR (Forward-Right),BL (Backward-Left), BR (Backward-Right)\n\n
+
+All moves are relative to the players perspective.\n\n
+
+  Move command format:\n
+     - For Pawn and Hero1: &lt;character_name&gt;:&lt;move&gt; (e.g., P1:L, H1:F)\n
+     - For Hero2: &lt;character_name&gt;:&lt;move&gt; (e.g., H2:FL, H2:BR)
+    ]]>
+    </string>
+
+    <string name="game_flow">
+        <![CDATA[
+        Players deploy all 5 characters on their starting row in any order.\n
+        Character positions are input as a list of character names, placed from left to right.\n
+        Players can choose any combination of Pawns, Hero1, and Hero2 for their team.\n\n
+
+        Turns:\n
+        Players alternate turns, making one move per turn.\n\n
+
+        Combat:\n
+        If a character moves to a space occupied by an opponents character, the opponents character is removed from the game.\n
+        For Hero1 and Hero2, any opponents character in their path is removed, not just the final destination.\n\n
+
+        Invalid Moves:\n
+        Moves are considered invalid if:\n
+        a. The specified character does not exist.\n
+        b. The move would take the character out of bounds.\n
+        c. The move is not valid for the given character type.\n
+        d. The move targets a friendly character.\n
+        Players must retry their turn if they input an invalid move.
+        ]]>
+    </string>
+    <string name="winning_the_game">
+        <![CDATA[
+        Winning the Game:\n
+        The game ends when one player eliminates all of their opponent characters.\n
+        The winning player is announced, and players can choose to start a new game.
+        ]]>
+    </string>
+
+    <!-- Bonus Challenges -->
+    <string name="bonus_challenges_title">Bonus Challenges</string>
+    <string name="hero3">
+        <![CDATA[
+        Hero3:\n
+        Movement: Moves 2 steps straight and one to the side in a single turn.\n
+        Attack: Kills only the character at its final landing position (if occupied by an opponent).\n
+        Move commands:\n
+        FL: 2 steps Forward, 1 step Left\n
+        FR: 2 steps Forward, 1 step Right\n
+        BL: 2 steps Backward, 1 step Left\n
+        BR: 2 steps Backward, 1 step Right\n
+        RF: 2 steps Right, 1 step Forward\n
+        RB: 2 steps Right, 1 step Backward\n
+        LF: 2 steps Left, 1 step Forward\n
+        LB: 2 steps Left, 1 step Backward
+        ]]>
+    </string>
+    <string name="dynamic_team_composition">
+        <![CDATA[
+        Dynamic Team Composition\n
+        Allow players to choose their team composition at the start of each game.\n
+        Ensure the game logic can handle any combination of character types.
+        ]]>
+    </string>
+    <string name="spectator_mode">
+        <![CDATA[
+        Spectator Mode:\n
+        Add a spectator mode for other clients to watch ongoing games.
+        ]]>
+    </string>
+    <string name="chat_feature">
+        <![CDATA[
+        Chat Feature:\n
+        Implement a chat feature for players to communicate during the game.
+        ]]>
+    </string>
+    <string name="ai_opponent">
+        <![CDATA[
+        AI Opponent:\n
+        Create an AI opponent that can play the game using basic strategy.
+        ]]>
+    </string>
+    <string name="replay_system">
+        <![CDATA[
+        Replay System:\n
+        Implement a replay system that allows players to review past games move by move.
+        ]]>
+    </string>
+    <string name="ranking_system">
+        <![CDATA[
+        Ranking System:\n
+        Add a ranking system that tracks player performance across multiple games.
+        ]]>
+    </string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/chess_bg"
+    android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Start Game" />
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Settings" />
+
+    <Button
+        android:id="@+id/btnViewRules"
+        android:layout_width="200dp"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:text="View Rules" />
+
+</LinearLayout>

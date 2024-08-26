@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPlayerA">#FF0000</color>
+    <color name="colorPlayerB">#0000FF</color>
+    <color name="colorEmptyCell">#DDDDDD</color>
+    <color name="colorHighlight">#FFFF00</color>
+
+</resources>
